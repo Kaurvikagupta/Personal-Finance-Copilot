@@ -2,7 +2,7 @@
 
 > A self-correcting, multi-agent AI financial dashboard designed to analyze spending, audit budgets, and protect user privacy in real-time.
 
-![Personal Finance Copilot](reference.png)
+![Personal Finance Copilot](demo_screenshot.png)
 
 ## 🌟 Overview
 
