@@ -950,3 +950,66 @@ body {
     50% { opacity: 1; }
     100% { top: 100%; opacity: 0; }
 }
+
+
+/* ==================== MOBILE RESPONSIVE PATCHES ==================== */
+@media (max-width: 900px) {
+    /* Validation Report */
+    #validation-report-card > div:nth-child(3) {
+        grid-template-columns: 1fr 1fr !important;
+    }
+    /* Persona and Impact Row */
+    #persona-impact-row {
+        grid-template-columns: 1fr !important;
+    }
+    /* AI Coach Card */
+    #coach-card > div:nth-child(2) {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+    #coach-card > div:nth-child(2) > div:nth-child(2) {
+        border-left: none !important;
+        padding-left: 0 !important;
+        border-top: 1px solid rgba(255,255,255,0.05);
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Validation Report Metrics */
+    #validation-report-card > div:nth-child(3) {
+        grid-template-columns: 1fr !important;
+    }
+    /* Three Column Grid for Auditor */
+    .val-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+    .val-grid > .val-col-header {
+        display: none;
+    }
+    .val-row {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+    .val-arrow {
+        transform: rotate(90deg);
+        margin: 0.5rem 0;
+        align-self: center;
+    }
+    /* Persona details */
+    #persona-icon {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 2rem !important;
+    }
+    /* Table overflow */
+    .tx-table-wrapper {
+        overflow-x: auto;
+    }
+    .val-row > div {
+        width: 100%;
+    }
+}
